@@ -1,0 +1,22 @@
+<p>home works!</p>
+<br />
+<button routerLink="/aboutus" class="btn btn-primary">AboutUs</button>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>FirstName</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td [ngStyle]="{ color: 'red' }">{{ user.name }}</td>
+
+      <td>
+        <button type="button" (click)="UserDelete(user.id)" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
