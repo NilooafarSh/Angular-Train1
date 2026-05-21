@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form (submit)="submitForm($event)">
+        <div class="mb-3">
+          <label for="Firstname" class="form-label">Firstname</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="contactus.Firstname"
+            name="Firstname"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Lastname" class="form-label">Lastname</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="contactus.Lastname"
+            name="Lastname"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Username" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="contactus.Username"
+            name="Username"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            [(ngModel)]="contactus.Password"
+            name="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
