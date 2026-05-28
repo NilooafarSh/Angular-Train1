@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let item of bloglist">
+    <div class="card">
+      <div class="card-header">{{ item.Title }}</div>
+      <div class="card-body">{{ item.Description }}</div>
+      <div class="card-footer">{{ item.author }}</div>
+    </div>
+  </div>
+</div>
+<hr />
+<app-blog-detail [MyBlogDetail]="selectedBlog"></app-blog-detail>
